@@ -1,0 +1,9 @@
+{:lein   true
+ :nrepl  {:port 9000}
+ :builds {:app        {:target     :browser
+                       :output-dir "resources/public/js/app"
+                       :asset-path "/js/app"
+                       :devtools   {:http-root          "resources/public"
+                                    :http-port          3449
+                                    :http-resource-root "."}
+                       :modules    {:main {:entries [my-app.core]}}}}}
